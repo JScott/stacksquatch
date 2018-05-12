@@ -233,7 +233,7 @@ div.row.photos {
   float: none;
   width: 280px;
   height: 280px;
-  font-size: 1em;
+  font-size: 1.5em;
 /*   -webkit-transform: rotate(-1.5deg);
   -moz-transform: rotate(-1.5deg); */
   background-color: #fff;
@@ -281,7 +281,7 @@ div.row.photos {
   transform: rotate(-1.8deg);
   width: 300px;
   height: 350px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: 'Caveat', cursive;
 /*   background: url('https://cdn.glitch.com/c15cc3a4-bb3c-40c7-9c20-653fce2cde27%2Fcontact.png?1525839992424');
   background-repeat: no-repeat;
