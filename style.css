@@ -24,6 +24,12 @@ div.column {
   margin: 0 auto;
 }
 
+div.links {
+  width: 300px;
+  float: left;
+  margin:0 auto;
+}
+
 div.row .note img.icon {
   position:relative;
   top:3px;
@@ -38,7 +44,7 @@ div.row .note img.icon {
   height: 160px; */
   box-shadow: 0 5px 6px rgba(0,0,0,.25);
   float: left;
-  margin: 32px;
+  margin: 16px;
   border: 1px solid rgba(0,0,0,.25);
   display: inline-block;
   position: relative;
@@ -53,7 +59,6 @@ div:hover.note {
 .text {
   margin: 10px;
 }
-
 
 
 /* stickers */
@@ -73,7 +78,7 @@ img.sticker.believe {
 }
 img.sticker.alien {
   left: 600px;
-  top: 800px;
+  top: 700px;
   transform: rotate(47deg) scale(0.8);
 }
 img.sticker.ball {
@@ -92,15 +97,14 @@ img.sticker.ball {
   }
   div.row .note {
     width: 250px;
-    height: 200px;
     font-size: 1em;
     margin: 0;
     padding: 0;
   }
   div.row .note.photo {
     width: 300px;
-    height: 350px;
-    font-size: 1.2em;
+    height: 300px;
+    font-size: 1.5em;
     background-color: #fff;
     display: inline-block;
     margin: 0 5px;
@@ -109,7 +113,6 @@ img.sticker.ball {
   }
   div.row .mail {
     padding: 5px;
-    height: 350px;
   }
   div.row .carousel {
     padding: 0;
@@ -198,14 +201,32 @@ img.sticker.ball {
 }
 
 
+/* trailers */
+
+div.row.trailers {
+  width: 700px;
+}
+.trailer { /* 16:9 aspect ratio */
+  width: 500px;
+  height: 281px;
+  transform: rotate(.4deg);
+  background-color: #98DDDE;
+  padding: 20px;
+}
+.trailer iframe {
+  width: 500px;
+  height: 281px;
+}
+
+
 /* mail */
 
 .mail {
 /*   background: url(https://cdn.glitch.com/c15cc3a4-bb3c-40c7-9c20-653fce2cde27%2Fold-envelope-1506802.jpg?1525808734886) no-repeat;
   background-size: 320px 300px; */
   width: 320px;
-  height: 200px;
-  font-size: 5em;
+  /*height: 200px;*/
+  /*font-size: 5em;*/
 /*   transform: rotate(1deg); */
 /*   background-color: #CBFAFA; */
   padding: 10px;
@@ -223,10 +244,9 @@ div.row.photos {
   width: 100%;
 /*   height: 500px; */
 /*   overflow-x: scroll;
-  padding: 10px;
+  padding: 20px;
   margin: 0;
   white-space: nowrap; */
-  
   padding: 0;
   overflow:hidden;
 }
@@ -250,7 +270,6 @@ div.row.photos {
   -moz-transform: rotate(-1.5deg); */
   background-color: #fff;
   font-family: 'Caveat', cursive;
-  
   display: inline-block;
   margin: 0 10px;
   position:relative;
@@ -345,14 +364,4 @@ body div.row .photo .pin {
 }
 body div.row .ad .pin {
   background-image: radial-gradient(khaki 50%, black 100%);
-}
-
-
-
-/* mail chimp */
-
-/* #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; } */
-#mc_embed_signup{
-  clear:left;
-  font:14px Helvetica,Arial,sans-serif;
 }
