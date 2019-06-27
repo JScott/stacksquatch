@@ -1,7 +1,11 @@
 /* CSS files add styling rules to your content */
 
+/* https://www.color-hex.com/color/e5ab70 */
+
 body {
-  background-color: #bb8a55;
+  background-color: #EADDCC;
+  background-image: url("images/cork.png");
+  background-size: auto;
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 0;
   transition-timing-function: ease;
@@ -76,7 +80,7 @@ img.sticker.believe {
   top: 120px;
   transform: rotate(11.5deg) scale(0.5);
 }
-img.sticker.alien {
+.sticker.alien {
   left: 600px;
   top: 700px;
   transform: rotate(47deg) scale(0.8);
@@ -122,8 +126,11 @@ img.sticker.ball {
     margin: 5px 0;
   }
   div.row .ad.gob {
-    height: 270px; 
+    height: 270px;
     margin: 5px 0;
+  }
+  div.trailers {
+    display: none;
   }
 }
 
@@ -152,8 +159,16 @@ img.sticker.ball {
   div:hover.note {
     border: 1px solid rgba(0,0,0,.25);
   }
-  div.row.top, div.row.bottom {
-     width: 100%; 
+  div.row.top, div.row.bottom, div.row.trailers {
+     width: 100%;
+  }
+  div.trailer { /* 16:9 aspect ratio */
+    width: 400px;
+    height: 225px;
+  }
+  div.trailer iframe {
+    width: 400px;
+    height: 225px;
   }
 }
 
@@ -170,6 +185,9 @@ img.sticker.ball {
   div.row.top, div.row.bottom {
      width: 100%; 
   }
+  img.sticker.alien {
+    display: none;
+  }
 }
 
 
@@ -180,7 +198,7 @@ img.sticker.ball {
   height: 350px;
   font-size: 1.5em;
   transform: rotate(-.6deg);
-  background-color: #98DDDE;
+  background-color: #b7d4f2;
   text-align: center;
   padding: 20px;
 }
@@ -203,14 +221,14 @@ img.sticker.ball {
 
 /* trailers */
 
-div.row.trailers {
+.trailers {
   width: 700px;
 }
 .trailer { /* 16:9 aspect ratio */
   width: 500px;
   height: 281px;
   transform: rotate(.4deg);
-  background-color: #98DDDE;
+  background-color: #e5e570;
   padding: 20px;
 }
 .trailer iframe {
@@ -231,7 +249,7 @@ div.row.trailers {
 /*   background-color: #CBFAFA; */
   padding: 10px;
 /*   background-color: #BFD641; */
-  background: linear-gradient(185deg, #82931f, #BFD641 10%, #BFD641 90%, #82931f);
+  background: linear-gradient(185deg, #b7b759, #e5e570  10%, #e5e570  90%, #b7b759);
 }
 
 
@@ -306,7 +324,7 @@ div.row.photos {
 
 .ad {
 /*   font-size: 0.9em; */
-  background-color: #fff;
+  background: linear-gradient(185deg, #b75a59, #e57170  10%, #e57170  90%, #b75a59);
 }
 .ad.contact {
   transform: rotate(-1.8deg);
@@ -318,7 +336,6 @@ div.row.photos {
   background-repeat: no-repeat;
   background-size: 300px 350px; */
 /*   linear-gradient(to left, lime, lime 28px, red 77%, cyan); */
-  background: linear-gradient(172deg, #F4F4DA, #F4F4DA 80%, #968B4B);
 }
 .ad.gob {
   transform: rotate(1.3deg);
