@@ -224,7 +224,7 @@ img.sticker.ball {
     height: 230px;
     font-size: 1.4em;
   }
-  .ad.contact address {
+  div.row .ad.contact address {
     font-size: 1em;
   }
   div.column div.row.trailers .trailer {
