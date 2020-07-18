@@ -224,6 +224,9 @@ img.sticker.ball {
     height: 230px;
     font-size: 1.4em;
   }
+  .ad.contact address {
+    font-size: 1em;
+  }
   div.column div.row.trailers .trailer {
     margin: 16px 0;
     padding: 10px;
@@ -418,6 +421,9 @@ div.row.photos {
   background-repeat: no-repeat;
   background-size: 300px 350px; */
 /*   linear-gradient(to left, lime, lime 28px, red 77%, cyan); */
+}
+.ad.contact address {
+  font-size: 0.8em;
 }
 .ad.gob {
   transform: rotate(1.3deg);
